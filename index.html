@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <header id="header">
+        <div class="logo">
+          <img
+            id="header-img"
+            src="https://cdn.glitch.global/7b1dc943-9dab-4957-b538-993aed4ba94b/logo_noir.png?v=1702670367693"
+            alt="lilju logo"
+          />
+        </div>
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#trailer">Trailers</a></li>
+            <li><a class="nav-link" href="#trilogy">Trilogy</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container"></div>
+      <section id="hero">
+        <h1>Celloscapes, a relaxing cello music trilogy by Lilju</h1>
+      </section>
+      <div class="container">
+        <section id="features">
+          <h2 class="title">Features</h2>
+          <div class="grid">
+            <div class="icon">
+              <i class="fa-solid fa-compact-disc"></i>
+            </div>
+            <div class="desc">
+              <h2>Cello music</h2>
+              <p>
+                The concept for these albums was to create music tracks which
+                would describe different landscapes, imaginary or real, mostly
+                inspired by the landscapes I visited in Ireland and Iceland. I
+                composed music tracks inspired by celtic and medieval music in
+                modal tones.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon">
+              <i class="fa-solid fa-headphones"></i>
+            </div>
+            <div class="desc">
+              <h2>Binaural Beats</h2>
+              <p>
+                I studied the relaxing properties of binaural beats to mix them
+                with my tracks, to get a deeper soothing effect when listened
+                with headphones.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon">
+              <i class="fa-solid fa-water"></i>
+            </div>
+            <div class="desc">
+              <h2>White Noise</h2>
+              <p>
+                I also recorded nature sounds when travelling, mostly white
+                noise (wind and water) which also has a soothing effect for even
+                deeper relaxation.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="trailer">
+          <div>
+            <h2 class="title">Trailers</h2>
+          </div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/5Cn9A5ukF3E?si=uD4QdKmSA7vYw9I7"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            id="video"
+            width="560"
+            height="315"
+            frameborder="0"
+            allowfullscreen
+            src="https://www.youtube.com/embed/dndLDKTatq8?si=wh99RCXskCg8rKJ6"
+          ></iframe>
+        </section>
+        <section id="trilogy">
+          <h2 class="title">Trilogy</h2>
+          <div class="products">
+            <div class="product" id="first">
+              <div class="level">Celloscapes (First EP)</div>
+              <img
+                src="https://cdn.glitch.global/7b1dc943-9dab-4957-b538-993aed4ba94b/a3423257920_16.jpg?v=1702846190797"
+              />
+              <h2>5€</h2>
+              <p>5 Tracks</p>
+              <button class="btn">
+                <a href="https://lilju.bandcamp.com/album/celloscapes" target="_blank">
+                  Listen
+                </a>
+              </button>
+            </div>
+            <div class="product" id="second">
+              <div class="level">Celloscapes² (Remixes EP)</div>
+              <img
+                src="https://cdn.glitch.global/7b1dc943-9dab-4957-b538-993aed4ba94b/pochettecelloscapes2.jpg?v=1702725624198"
+              />
+              <h2>Free</h2>
+              <p>6 Tracks</p>
+              <button class="btn">
+                <a href="https://lilju.bandcamp.com/album/celloscapes-2" target="_blank">
+                  Listen
+                </a>
+              </button>
+            </div>
+            <div class="product" id="third">
+              <div class="level">Celloscapes432 (Relaxation LP)</div>
+              <img
+                src="https://cdn.glitch.global/7b1dc943-9dab-4957-b538-993aed4ba94b/celloscapes-432.jpg?v=1702725396147"
+              />
+              <h2>10€</h2>
+              <p>12 Tracks</p>
+              <button class="btn">
+                <a href="https://lilju.bandcamp.com/album/celloscapes-432" target="_blank">
+                  Listen
+                </a>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="newsletter">
+          <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <label for="email"
+              >Subscribe to my newsletter to get information about my upcoming
+              projects !</label
+            >
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Type your email adress"
+              required
+            />
+            <input
+              id="submit"
+              class="btn"
+              value="Get more Info"
+              type="submit"
+              action="https://www.freecodecamp.com/email-submit"
+            />
+          </form>
+        </section>
+        <footer>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <span>Copyright 2023, Lilju</span>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
